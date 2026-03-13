@@ -1,0 +1,38 @@
+img {
+  max-width: 100%; /* Faz a imagem nunca ultrapassar o tamanho do contêiner */
+  display: block;  /* Remove o espaço extra embaixo da imagem (inline padrão) */
+}
+
+div {
+  display: grid; /* Define o container como grid */
+  grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual (1 fração cada) */
+  gap: 2rem; /* Espaçamento de 2rem entre linhas e colunas */
+}
+
+div h1 {
+  grid-column: 1 / -1; 
+  /* Faz o <h1> ocupar da 1ª até a última coluna do grid (ou seja, largura total) */
+}
+
+/* 🔽 Responsividade abaixo de 600px */
+@media (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr; /* Apenas 1 coluna */
+    gap: 1rem; /* Espaçamento menor entre os elementos */
+  }
+}
+
+/* 🔼 Responsividade acima de 1000px */
+@media (min-width: 1000px) {
+  html {
+    font-size: 150%; 
+    /* Aumenta a base do font-size (tudo em rem cresce junto) */
+  }
+}
+
+/* 🎯 Responsividade específica entre 800px e 900px */
+@media (min-width: 800px) and (max-width: 900px) {
+  h1 {
+    background: lightgreen; /* Adiciona um fundo verde claro no título */
+  }
+}
