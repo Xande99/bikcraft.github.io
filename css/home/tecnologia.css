@@ -19,7 +19,6 @@
 .tecnologia-conteudo {
     padding-top: 160px;
     padding-bottom: 160px;
-
 }
 
 .tecnologia-conteudo > span {
@@ -44,17 +43,17 @@
     margin-bottom: 80px;
 }
 
-.tecnologia-vatangens {
+.tecnologia-vantagens {
     display: flex;
     gap: 40px;
 }
 
-.tecnologia-vatangens h3 {
+.tecnologia-vantagens h3 {
     margin-bottom: 8px;
     width: max-content;
 }
 
-.tecnologia-vatangens img {
+.tecnologia-vantagens img {
     width: 24px;
     margin-bottom: 8px;
 }
@@ -79,7 +78,7 @@
 }
 
 @media (max-width: 600px) {
-    .tecnologia-vatangens {
+    .tecnologia-vantagens {
         flex-direction: column;
     }
 }
